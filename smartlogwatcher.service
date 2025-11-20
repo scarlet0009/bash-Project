@@ -1,0 +1,10 @@
+[Unit]
+Description=Smart LogWatcher Intrusion Detection Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/smartlogwatcher.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
