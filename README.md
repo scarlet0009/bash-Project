@@ -1,3 +1,6 @@
+
+![Logo](/images/Smartwacher.png)
+
 # SmartLogWatcher
 A professional Bash-based Intrusion Detection & Auto-Blocking System for Linux.
 
