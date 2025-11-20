@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SmartLogWatcher Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SmartLogWatcher Dashboard</h1>
+      <div class="actions">
+        <button id="refresh">Refresh</button>
+        <button id="genReport">Generate Report</button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card" id="live">
+        <h2>Live Events</h2>
+        <div id="liveLog" class="log"></div>
+      </div>
+
+      <div class="card" id="blocked">
+        <h2>Blocked IPs</h2>
+        <table id="blockedTable">
+          <thead><tr><th>IP</th><th>Blocked At</th><th>Until</th><th>Reason</th><th>Action</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="card" id="top">
+        <h2>Top Offenders</h2>
+        <canvas id="topChart" width="400" height="200"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
